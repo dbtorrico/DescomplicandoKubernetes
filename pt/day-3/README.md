@@ -71,7 +71,7 @@ metadata:
     app: nginx-deployment
   name: nginx-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-deployment
@@ -161,7 +161,7 @@ template:
           memory: 128Mi
 ```
 
-Aqui nós estamos definindo o template que será utilizado para criar os Pods. Nesse caso nós estamos definindo que o template irá utilizar a imagem **nginx** e que o nome do container será **nginx**. Também estamos definindo os limites de CPU e memória que poderão ser utilizados pelo container. Essa definição é identica ao que vimos no Day-2, quando criamos um Pod.
+Aqui nós estamos definindo o template que será utilizado para criar os Pods. Nesse caso nós estamos definindo que o template irá utilizar a imagem **nginx** e que o nome do container será **nginx-deployment**. Também estamos definindo os limites de CPU e memória que poderão ser utilizados pelo container. Essa definição é identica ao que vimos no Day-2, quando criamos um Pod.
 
 &nbsp;
 
